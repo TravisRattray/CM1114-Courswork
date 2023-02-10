@@ -39,6 +39,73 @@ li{
 }
 
 li:hover{
-  background-color: #017592;
+  background-color: #44599c;
   box-shadow: 3px 5px 5px;
+}
+
+/* body{
+ background-image: url(IMAGES/bjj3.jpg);
+ background-size: cover;
+ background-repeat: no-repeat;
+} */
+
+.image{
+  position: relative;
+  display: block;
+  width: 400px;
+  down
+}
+
+.image__img {
+  display: block;
+  width: 100%;
+  height: 50%;
+  position: 300px; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image__overlay {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.image__overlay--blur {
+  backdrop-filter: blur(5px);
+}
+
+
+.image__overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+  opacity: 1;
+}
+
+.image__overlay:hover > * {
+  transform: translateY(0);
+}
+
+.image__title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.image__descirption {
+  font-size: 1.25em;
+  margin-top: 0.25em;
 }
